@@ -5,7 +5,9 @@ import {
   import { Link } from "react-router-dom";
   import { BsBag } from "react-icons/bs";
 import Logoshop from "../assets/logo.png";
+import { useSelector } from "react-redux";
 const Header = () => {
+  const productsData = useSelector((state) => state.fashi.productsData);
   return (
     <header className="header-section bg-white sticky top-0 z-50">
         <div className="container">
@@ -39,7 +41,7 @@ const Header = () => {
                       </Link>
                       
                       <div className="bg-red-500 absolute -right-2 -bottom-2 text-[12px] w-[18px] h-[18px] text-white rounded-full flex justify-center items-center">
-                        {/* {itemAmount} */}2
+                       {productsData.length}
                       </div>
                     </div>
                   </li>

@@ -2,7 +2,7 @@ import axios from "axios";
 
 export async function productsData(){
     const products = await axios.get(
-        "https://fakestoreapi.com/products"
+        "http://localhost:8080/api/v1/products/all"
     );
     return products;
 }

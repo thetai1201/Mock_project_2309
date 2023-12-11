@@ -16,6 +16,8 @@ import Register from "./pages/Register";
 import Shoppage from "./pages/Shoppage";
 import Contact from "./pages/Contact";
 import Conllection from "./pages/Conllection";
+import { productsData } from "./api/Api";
+import Product from "./components/Product";
 const Layout=()=>{
   return(
     <div>
@@ -34,10 +36,16 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home/>,
+        loader: productsData,
       },
       {
         path: "/shopPage",
         element: <Shoppage/>,
+        loader: productsData,
+      },
+      {
+        path: "/product/:id",
+        element: <Product/>,
       },
       {
         path: "/contact",
