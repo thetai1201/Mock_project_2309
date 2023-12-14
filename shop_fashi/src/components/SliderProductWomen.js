@@ -4,8 +4,10 @@ import "../style/style.css";
 import Slider from "react-slick";
 import ProductCard from './ProductCard';
 const SliderProductWomen = ({products}) => {
-    const filteredProducts = products.filter((item) => {
-      return item.categoryType === "WOMEN";
+
+    const filteredProducts = products
+    .filter((item) => {
+      return item.categoryType === "Women";
     });
     const settings = {
       dots: true,

@@ -11,8 +11,8 @@ const Home = () => {
   const [products , setProducts] = useState([]);
   const data = useLoaderData();
   useEffect(()=>{
-     setProducts(data.data.content);
-    
+
+     setProducts(data.data);
     
   },[data]);
   return (

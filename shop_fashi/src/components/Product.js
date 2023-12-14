@@ -78,7 +78,7 @@ const dispath = useDispatch()
             </button>
           </div>
           <p className="text-base text-gray-500">
-            Category : <span className="font-medium capitalize">{details.category}</span>
+            Category : <span className="font-medium capitalize">{details.categoryType}</span>
             </p>
         </div>
       </div>

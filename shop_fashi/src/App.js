@@ -1,7 +1,6 @@
 import React from "react";
 import Home from "./pages/Home";
 import Header from "./components/Header";
-import "./style/style.css";
 import Footer from "./components/Footer";
 import {
   createBrowserRouter,
@@ -16,8 +15,10 @@ import Register from "./pages/Register";
 import Shoppage from "./pages/Shoppage";
 import Contact from "./pages/Contact";
 import Conllection from "./pages/Conllection";
-import { productsData } from "./api/Api";
+import { productsData } from "./service/product";
 import Product from "./components/Product";
+import Admin from "./pages/Admin/Admin";
+import "./pages/Admin/Admin.css"
 const Layout=()=>{
   return(
     <div>
@@ -73,9 +74,11 @@ const router = createBrowserRouter([
       }
       
     ],
+   
   },
   {
-
+    path: "/admin/*", 
+    element : <Admin />
   }
 ])
 function App() {

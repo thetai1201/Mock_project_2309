@@ -7,9 +7,8 @@ const Shoppage = () => {
   const [products , setProducts] = useState([]);
   const data = useLoaderData();
   useEffect(()=>{
-    setProducts(data.data.content);
+    setProducts(data.data);
   },[data]);
-  //console.log(data.data.content);
   return (
     <div>
       <Products products={products}/>

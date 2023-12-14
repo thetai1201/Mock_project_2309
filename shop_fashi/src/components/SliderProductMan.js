@@ -3,8 +3,9 @@ import  imgProductMen from "../assets/man-large.jpg";
 import Slider from "react-slick";
 import ProductCard from './ProductCard';
 const SliderProductMan = ({products}) => {
-  const filteredProducts = products.filter((item) => {
-    return item.categoryType === "MAN";
+  const filteredProducts = products
+  .filter((item) => {
+    return item.categoryType === "Man";
   });
   const settings = {
     dots: true,

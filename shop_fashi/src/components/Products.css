@@ -1,0 +1,70 @@
+.filter-widget {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 30px;
+    width: 300px;
+  }
+  
+  .input-field {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+  }
+  
+  .price-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .action-button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .filter-catagories {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .filter-catagories li {
+    margin-bottom: 10px;
+  }
+  
+  .filter-catagories a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .filter-catagories a:visited {
+    color: #3498db;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
